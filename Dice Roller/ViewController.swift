@@ -26,6 +26,11 @@ class ViewController: UIViewController {
 
 
     @IBAction func rollButton(_ sender: Any) {
+        
+        print("Botão apertado.")
+        
+        diceOne.image = UIImage(imageLiteralResourceName: "DiceFour")
+        diceTwo.image = UIImage(imageLiteralResourceName: "DiceFour")
     }
 }
 
