@@ -12,10 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceOne: UIImageView!
     @IBOutlet weak var diceTwo: UIImageView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     @IBAction func rollButton(_ sender: Any) {
 
         let diceImages = ["DiceOne", "DiceTwo", "DiceThree", "DiceFour", "DiceFive", "DiceSix"]
