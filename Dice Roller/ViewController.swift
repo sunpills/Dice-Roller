@@ -10,27 +10,20 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var diceOne: UIImageView!
-    
     @IBOutlet weak var diceTwo: UIImageView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        diceOne.image = UIImage(imageLiteralResourceName: "DiceSix")
-        
-        diceTwo.image = UIImage(imageLiteralResourceName: "DiceTwo")
-        
-        diceOne.alpha = 0.5
-        diceTwo.alpha = 0.5
     }
-
 
     @IBAction func rollButton(_ sender: Any) {
-        
         print("Botão apertado.")
-        
-        diceOne.image = UIImage(imageLiteralResourceName: "DiceFour")
-        diceTwo.image = UIImage(imageLiteralResourceName: "DiceFour")
+
+        let diceImages = ["DiceOne", "DiceTwo", "DiceThree", "DiceFour", "DiceFive", "DiceSix"]
+        let leftDiceNumber = Int.random(in: 0...5)
+        let rightDiceNumber = Int.random(in: 0...5)
+
+        diceOne.image = UIImage(named: diceImages[leftDiceNumber])
+        diceTwo.image = UIImage(named: diceImages[rightDiceNumber])
     }
 }
-
