@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func rollButton(_ sender: Any) {
-        print("Botão apertado.")
 
         let diceImages = ["DiceOne", "DiceTwo", "DiceThree", "DiceFour", "DiceFive", "DiceSix"]
         let leftDiceNumber = Int.random(in: 0...5)
